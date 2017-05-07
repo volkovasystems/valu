@@ -1,0 +1,30 @@
+{
+  "name": "valu",
+  "version": "0.0.0",
+  "description": "Get object's own enumerable values.",
+  "main": "valu.deploy.js",
+  "support": "valu.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "get",
+    "object",
+    "own",
+    "enumerable",
+    "value",
+    "valu"
+  ],
+  "homepage": "https://github.com/volkovasystems/valu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falze": "^0.22.0"
+  }
+}
