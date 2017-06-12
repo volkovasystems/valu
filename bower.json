@@ -1,11 +1,12 @@
 {
   "name": "valu",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get object's own enumerable values.",
   "main": "valu.deploy.js",
   "support": "valu.support.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -25,6 +26,6 @@
     "tests"
   ],
   "dependencies": {
-    "falze": "^0.22.0"
+    "falze": "^0.23.0"
   }
 }
