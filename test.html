@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>valu unit test</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Valu QUnit test</title>
-	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
-	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-	<script type="application/javascript" src="./valu.deploy.js"></script>
-</head>
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
 
-<body>
-	<div id="qunit"></div>
-	<div id="qunit-fixture"></div>
-	<script>
-		QUnit.test( "equal test", function( assert ) {
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
 
-			assert.deepEqual( valu( { "hello": "world" } ), [ "world" ], "should return array containing 'world'" );
+		<script type="application/javascript" src="./valu.deploy.js"></script>
+	</head>
 
-		} );
-	</script>
-</body>
+	<body>
+		<div id="qunit"></div>
 
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "valu unit test", function( assert ) {
+
+				assert.deepEqual( valu( { "hello": "world" } ), [ "world" ], "should return array containing 'world'" );
+				
+			} );
+		</script>
+	</body>
 </html>

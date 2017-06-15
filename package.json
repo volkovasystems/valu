@@ -1,6 +1,6 @@
 {
   "name": "valu",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get object's own enumerable values.",
   "main": "valu.js",
   "support": "valu.support.js",
@@ -24,7 +24,8 @@
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
   "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon"
   ],
   "license": "MIT",
   "bugs": {
