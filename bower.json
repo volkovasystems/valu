@@ -1,6 +1,6 @@
 {
   "name": "valu",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Get object's own enumerable values.",
   "main": "valu.deploy.js",
   "support": "valu.support.js",
@@ -27,6 +27,6 @@
     "tests"
   ],
   "dependencies": {
-    "falze": "^0.24.0"
+    "falze": "^0.25.0"
   }
 }
