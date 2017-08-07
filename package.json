@@ -1,19 +1,17 @@
 {
 	"name": "valu",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "Get object's own enumerable values.",
 	"main": "valu.js",
 	"support": "valu.support.js",
 	"deploy": "valu.deploy.js",
 	"browser": "valu.deploy.js",
 	"scripts": {
-		"build": "babel valu.js --out-file valu.support.js --source-maps && webpack --progress --display-modules",
 		"pristine": "rsetmod clean && flxc execute ./.install.sh",
 		"clear": "rsetmod clean --clear",
-		"formal": "jesy apply '*.json'",
+		"build": "babel valu.js --out-file valu.support.js --source-maps && webpack --progress --display-modules",
 		"pretest": "npm run clear && npm run build",
-		"test": "node valu-test.js",
-		"posttest": "npm run formal"
+		"test": "node valu-test.js"
 	},
 	"repository": {
 		"type": "git",
@@ -38,7 +36,7 @@
 	},
 	"homepage": "https://github.com/volkovasystems/valu#readme",
 	"dependencies": {
-		"babel-runtime": "^6.23.0",
+		"babel-runtime": "^6.25.0",
 		"falze": "^0.26.0"
 	},
 	"devDependencies": {
