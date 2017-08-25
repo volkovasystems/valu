@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-10T08:03:38.628Z",
-    "end": "2017-08-10T08:03:38.628Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-25T06:08:20.645Z",
+		"end": "2017-08-25T06:08:20.652Z",
+		"duration": 7
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 'world' ]",
+			"fullTitle": "valu `valu( { 'hello': 'world' } )` should be equal to [ 'world' ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 'world' ]",
+			"fullTitle": "valu `valu( { 'hello': 'world' } )` should be equal to [ 'world' ]",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

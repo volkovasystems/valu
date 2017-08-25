@@ -70,6 +70,12 @@ const path = require( "path" );
 
 describe( "valu", ( ) => {
 
+	describe( "`valu( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to [ 'world' ]", ( ) => {
+			assert.deepEqual( valu( { "hello": "world" } ), [ "world" ] );
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -79,6 +85,11 @@ describe( "valu", ( ) => {
 
 describe( "valu", ( ) => {
 
+	describe( "`valu( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to [ 'world' ]", ( ) => {
+			assert.deepEqual( valu( { "hello": "world" } ), [ "world" ] );
+		} );
+	} );
 
 } );
 
@@ -88,6 +99,24 @@ describe( "valu", ( ) => {
 //: @bridge:
 
 describe( "valu", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`valu( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to [ 'world' ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( valu( { "hello": "world" } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ "world" ] );
+
+		} );
+	} );
 
 } );
 

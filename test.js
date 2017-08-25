@@ -66,6 +66,12 @@ const valu = require( "./valu.js" );
 
 describe( "valu", ( ) => {
 
+	describe( "`valu( { 'hello': 'world' } )`", ( ) => {
+		it( "should be equal to [ 'world' ]", ( ) => {
+			assert.deepEqual( valu( { "hello": "world" } ), [ "world" ] );
+		} );
+	} );
+
 } );
 
 //: @end-server

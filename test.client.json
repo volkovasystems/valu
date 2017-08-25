@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-25T06:08:21.888Z",
+	"end": "2017-08-25T06:08:54.111Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "valu",
+			"duration": 0,
+			"start": "2017-08-25T06:08:53.811Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "valu",
+			"duration": 117,
+			"start": "2017-08-25T06:08:53.812Z",
+			"end": "2017-08-25T06:08:53.929Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-25T06:08:53.814Z",
+					"end": "2017-08-25T06:08:53.814Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "valu",
+					"associatedTest": "should be equal to [ 'world' ]"
+				},
+				{
+					"start": "2017-08-25T06:08:53.928Z",
+					"end": "2017-08-25T06:08:53.928Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "valu",
+					"associatedTest": "should be equal to [ 'world' ]"
+				},
+				{
+					"start": "2017-08-25T06:08:53.929Z",
+					"end": "2017-08-25T06:08:53.929Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "valu"
+				}
+			]
+		},
+		{
+			"name": "`valu( { 'hello': 'world' } )`",
+			"duration": 116,
+			"start": "2017-08-25T06:08:53.813Z",
+			"end": "2017-08-25T06:08:53.929Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 'world' ]",
+					"start": "2017-08-25T06:08:53.813Z",
+					"end": "2017-08-25T06:08:53.928Z",
+					"duration": 115,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
